@@ -9,3 +9,32 @@
 .title {
   text-shadow: 0px 0px 10px #35383F;
 }
+
+.coin, .coin-shadow {
+  transform-style: preserve-3d;
+  transition: all 1s ease-in;
+}
+
+.coins-container {
+  perspective: 1000px;
+}
+
+.coin-head, .coin-tail {
+  backface-visibility: hidden;
+}
+
+.coin-tail {
+  transform: rotateY(180deg);
+}
+
+@keyframes show-coin-head {
+  to {
+    transform: rotateY(720deg);
+  }
+}
+
+@keyframes show-coin-tail {
+  to {
+    transform: rotateY(900deg);
+  }
+}

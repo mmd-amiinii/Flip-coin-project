@@ -16,9 +16,11 @@
       <p class="text-[24px] text-[#ecedf04f] font-semibold">Press the coin or button to flip the coin</p>
     </div>
     <div class="coins-container flex justify-center relative">
-      <img src="./resources/heads.svg" alt="">
-      <img class="hidden" src="./resources/tails.svg" alt="">
-      <img class="absolute bottom-[-40px]" src="./resources/shadow.svg" alt="">
+      <div class="coin size-[160px] relative backface-hidden">
+        <img class="coin-head absolute" src="./resources/heads.svg" alt="">
+        <img class="coin-tail absolute" src="./resources/tails.svg" alt="">
+      </div>
+      <img class="coin-shadow absolute bottom-[-40px]" src="./resources/shadow.svg" alt="">
     </div>
     <button class="flip-btn text-[20px] uppercase font-semibold bg-[#1F6FB0] w-[150px] h-[50px] rounded-xl text-[#ECEDF0]">Random</button>
   </div>
