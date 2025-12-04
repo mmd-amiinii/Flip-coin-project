@@ -7,7 +7,7 @@
 }
 
 .title {
-  text-shadow: 0px 0px 10px #35383F;
+  text-shadow: 2px 2px 10px #35383F;
 }
 
 .coin, .coin-shadow {
@@ -25,6 +25,14 @@
 
 .coin-tail {
   transform: rotateY(180deg);
+}
+
+.show-coin-head {
+  animation: show-coin-head 0.7s ease-in forwards;
+}
+
+.show-coin-tail {
+  animation: show-coin-tail 0.7s ease-in forwards;
 }
 
 @keyframes show-coin-head {

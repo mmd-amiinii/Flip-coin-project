@@ -10,18 +10,19 @@
   <title>Flip Coin</title>
 </head>
 <body>
-  <div class="max-w-[640px] min-w-[450px] sm:max-w-full main-container h-dvh bg-[#404A65] flex flex-col items-center gap-[90px] pt-[100px]">
+  <div class="max-w-[640px] min-w-[450px] sm:max-w-full main-container h-dvh bg-[#404A65] flex flex-col items-center gap-[80px] pt-[100px]">
     <div class="texts font-['Kanit'] flex flex-col items-center">
       <h1 class="title text-[64px] text-[#ECEDF0] font-semibold">Flip the coin</h1>
       <p class="text-[24px] text-[#ecedf04f] font-semibold">Press the coin or button to flip the coin</p>
     </div>
-    <div class="coins-container flex justify-center relative">
+    <div class="coins-container flex flex-col justify-center relative">
       <div class="coin size-[160px] relative backface-hidden">
         <img class="coin-head absolute" src="./resources/heads.svg" alt="">
         <img class="coin-tail absolute" src="./resources/tails.svg" alt="">
       </div>
-      <img class="coin-shadow absolute bottom-[-40px]" src="./resources/shadow.svg" alt="">
+      <img class="coin-shadow absolute bottom-[-40px] self-center" src="./resources/shadow.svg" alt="">
     </div>
+    <span class="result text-[24px] text-[#ECEDF0] font-semibold">Head</span>
     <button class="flip-btn text-[20px] uppercase font-semibold bg-[#1F6FB0] w-[150px] h-[50px] rounded-xl text-[#ECEDF0]">Random</button>
   </div>
 </body>
