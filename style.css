@@ -6,6 +6,7 @@
   font-style: normal;
 }
 
+
 .title {
   text-shadow: 2px 2px 10px #35383F;
 }
@@ -19,30 +20,23 @@
   perspective: 1000px;
 }
 
-.coin-head, .coin-tail {
+.coin-head, .coin-tail, .coin-head-2, .coin-tail-2 {
   backface-visibility: hidden;
 }
 
-.coin-tail {
+.coin-tail, .coin-tail-2 {
   transform: rotateY(180deg);
 }
 
-.show-coin-head {
-  animation: show-coin-head 0.7s ease-in forwards;
+.spin {
+  animation: spin 0.7s ease-in;
 }
 
-.show-coin-tail {
-  animation: show-coin-tail 0.7s ease-in forwards;
-}
-
-@keyframes show-coin-head {
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
   to {
     transform: rotateY(720deg);
-  }
-}
-
-@keyframes show-coin-tail {
-  to {
-    transform: rotateY(900deg);
   }
 }
